@@ -1,0 +1,56 @@
+{
+  "fruits": [
+    {
+      "key": "apple",
+      "displayName": "Apple"
+    },
+    {
+      "key": "mango",
+      "displayName": "Mango"
+    },
+    {
+      "key": "pear",
+      "displayName": "Pear"
+    }
+  ],
+  "vegetables": [
+    {
+      "key": "cabbage",
+      "displayName": "Cabbage"
+    },
+    {
+      "key": "carrot",
+      "displayName": "Carrot"
+    },
+    {
+      "key": "broccoli",
+      "displayName": "broccoli"
+    },
+    {
+      "key": "spinach",
+      "displayName": "Spinach"
+    },
+    {
+      "key": "tomato",
+      "displayName": "Tomato"
+    }
+  ],
+  "meats": [
+    {
+      "key": "beef",
+      "displayName": "Beef"
+    },
+    {
+      "key": "pork",
+      "displayName": "Pork"
+    },
+    {
+      "key": "chicken",
+      "displayName": "Chicken"
+    },
+    {
+      "key": "lamb",
+      "displayName": "Lamb"
+    }
+  ]
+}

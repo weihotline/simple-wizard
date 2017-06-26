@@ -1,0 +1,33 @@
+<section class="food-wizard">
+
+  <div class="card">
+    <form-wizard>
+      <wizard-step [title]="steps[0].title" (onNext)="steps[0].onNext()">
+        <app-food-type-select [foodTypes]="foodTypes"
+                              (onFoodTypeSelected)="setFoodType($event)">
+        </app-food-type-select>
+      </wizard-step>
+
+      <wizard-step [title]="steps[1].title"
+                   (onPrev)="steps[1].onPrev()"
+                   (onComplete)="steps[1].onComplete()">
+        <div *ngIf="!isCompleted; else note">
+          <app-food-choice-select [source]="foods"
+                                  [destination]="foodSelections">
+          </app-food-choice-select>
+        </div>
+
+        <ng-template #note>
+          <h4>You have completed all the steps.</h4>
+          <p>
+            Here is your formatted list:
+            <code>
+              {{ foodWishlistStream | async | json }}
+            </code>
+          </p>
+        </ng-template>
+      </wizard-step>
+    </form-wizard>
+  </div>
+
+</section>

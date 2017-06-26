@@ -1,0 +1,11 @@
+<section class="food-type-select">
+
+  <select class="custom-select"
+          (change)="onChange($event.target.value)">
+    <option *ngFor="let type of foodTypes; trackBy:trackByFoodTypes"
+            [value]="type.key">
+      {{ type.displayName }}
+    </option>
+  </select>
+
+</section>
